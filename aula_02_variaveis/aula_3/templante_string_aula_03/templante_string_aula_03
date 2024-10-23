@@ -1,0 +1,41 @@
+# imports
+# Bibliotecaa para interagir o SO
+import os
+# Biblioteca para pegar data e hora no sistema 
+import datetime
+
+
+# limpar o terminal 
+os.system( ' cls' )
+
+print('-'*70)
+print('ENTRADA DE DADOS EM PYTHON')
+print('='*70)
+
+# Entrada
+nome = input('Entre com um nome: ')
+peso = input('Entre com o peso: ')
+altura = input('Entre com altura: ')
+
+# Entrada com Casting 
+nascimento = int(input('Data de nascimento: '))
+cep = int(input ('Entre vom o seu cep: '))
+bairro = str(input('Entre com um Bairro: '))
+rua = str(input('Nome da Rua: '))
+numero = int(input('Entre com o número: '))
+
+# Processamento: Pegando o ano correto
+ano_atual = datetime.datetime.now().year
+idade - int(ano_atual) - nascimento
+
+# Saída 
+print('-'*70)
+print( ' SAÍDA DE DADOS ')
+print('='*70)
+print('Nome..............:' , nome)
+print('Ano de nascimento: ', nascimento)
+print('o peso é: ', peso)
+print('altura.............:', altura)
+
+# Saída interlopada 
+print(f'{nome}')
