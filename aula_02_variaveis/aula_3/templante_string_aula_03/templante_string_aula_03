@@ -25,8 +25,8 @@ rua = str(input('Nome da Rua: '))
 numero = int(input('Entre com o número: '))
 
 # Processamento: Pegando o ano correto
-ano_atual = datetime.datetime.now().year
-idade - int(ano_atual) - nascimento
+ano_atual = datetime.datetime.now ( ).year
+nascimento - int(ano_atual) - nascimento
 
 # Saída 
 print('-'*70)
@@ -38,4 +38,11 @@ print('o peso é: ', peso)
 print('altura.............:', altura)
 
 # Saída interlopada 
-print(f'{nome}')
+print(f'{nome}, você tem {nascimento} anos!')
+print(f'CEP.......................{cep}')
+print(f'Bairro.................{bairro}')
+print(f'rua.......................{rua}')
+print(f'Número..................{numero}')
+print('-'*70)
+print('')
+
