@@ -20,4 +20,11 @@ media = nota1+nota2+nota3+nota4 / 4
 media_correta = (nota1+nota2+nota3+nota4) / 4
 
 # Saída 
-print
+print('.....Notas..........')
+print(f'Nota 1: {nota1} / Nota 2: {nota2}')
+print(f'Nota 3: {nota3}) / (Nota 4: {nota4}')
+print('-'*70)
+print(f'Média errada: {media}')
+print(f'Média correta: {media_correta}')  
+print('-'*70)  
+
