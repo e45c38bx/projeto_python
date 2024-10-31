@@ -14,10 +14,22 @@ print('-'*70)
 print('Desvendando números')
 print('='*70)
 
-# Entrada
-numero_01 = int(input('Entre com número 01: '))
-numero_02 = int(input('Entre com número 02: '))
-numero_03 = int(input('Entre com número 03: '))
+a = int(input('Entre com a: '))
+b = int(input('Entre com b: '))
+c = int(input('Entre com c: '))
 
+if (a > b and a > c):
+    print(f'{a} é o maior valor')
 
+if (b > c and b > a):
+    print(f'{b} é o maior valor')
+
+if (a < b and a < c):
+    print(f'{a} é o menor valor')
+
+if (b < a and b < c):
+    print(f'{b} é o menor valor')
+
+if (a == b and b == c):
+    print('Todos os valores são iguais')
 
