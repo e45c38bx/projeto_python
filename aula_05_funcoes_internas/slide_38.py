@@ -34,5 +34,15 @@ lista_2 = ['Ágata','Coly','Isis','Bia']
 print(f'Lista antiga: {lista_2}')
 # embaralhando = list(random.shuffle(lista)) dá erro
 # embaralhando = random.shuffle(lista) saída vazia
+random.shuffle(lista_2)
+print(f'Lista nova:{lista_2}')
+print('.'*70)
+
+print('Retorno de elementos únicos de uma população')
+numeros = [1, 2, 3, 4, 5, 6, 7]
+amostra_aleatoria = random.sample(numeros, 5)
+print(f'Retorno da amostragem {amostra_aleatoria}')
+print('.'*70)
+
 
 
