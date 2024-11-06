@@ -4,10 +4,19 @@ import os
 
 os.system('cls')
 
-frase = len(input('Entre com uma frase: '))
+frase = str(input('Entre com uma frase: '))
 
-quantidade_vogais = len(frase)
-print(f'A frase {frase} /ncontém {quantidade_vogais} vogais')
+a = frase.count('a')
+e = frase.count('e')
+i = frase.count('i')
+o = frase.count('0')
+u = frase.count('u')
+
+print(f'A vogal (a) é usada {a}')
+print(f'A vogal (e) é usada {e}')
+print(f'A vogal (i) é usada {i}')
+print(f'A vogal (o) é usada {o}')
+print(f'A vogal (u) é usada {u}')
 
 
 
