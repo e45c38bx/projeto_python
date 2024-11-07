@@ -9,7 +9,7 @@ frase = str(input('Entre com uma frase: '))
 a = frase.count('a')
 e = frase.count('e')
 i = frase.count('i')
-o = frase.count('0')
+o = frase.count('o')
 u = frase.count('u')
 
 print(f'A vogal (a) é usada {a}')
