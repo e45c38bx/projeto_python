@@ -11,4 +11,3 @@ print('='*70)
 intervalo = input('Entre com o intervalo: ')
 
 for i in range(intervalo):
-    
