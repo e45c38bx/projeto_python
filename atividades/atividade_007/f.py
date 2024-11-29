@@ -9,5 +9,5 @@ nomes = ["Ana", "João", "Liv", "Lana", "Amanda"]
 indice = [0,6]
 
 if indice in nomes:
-    indice = nomes.index()
+    indice.index(nomes)
     print(f'O índice é: {indice}')
