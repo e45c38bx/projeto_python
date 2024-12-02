@@ -33,3 +33,6 @@ if 0<= item_removido < len(lista):
 
     item_removido = lista.pop(0)
 print(lista)
+
+lista_fatiada = lista[0:1:2]
+print(f'Fatiando uma lista {lista_fatiada}/n')
