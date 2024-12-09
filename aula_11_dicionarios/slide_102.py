@@ -7,9 +7,9 @@ while True:
     print('-'*70)
     print('\nMenu de opções')
     print('1. Adicionar um par chave-valor')
-    print('2. Mostrar chave do dicionario')
-    print('3. Mostrar valores do dicionario')
-    print('4. Mostrar itens do dicionario')
+    print('2. Remove um item usando pop()')
+    print('3. Remover o último item usando popitem')
+    print('4. Mostrar o dicionario atual')
     print('5. Sair')
     print('-'*70)
 
@@ -23,31 +23,32 @@ while True:
         print(f'Par {chave}: {valor} adicionado')
 
     elif opcao == '2':
-        # Mostrar as chaves do dicionario usando keys()
+        # Remove um item específico usando pop()
         if meu_dicionario:
-            print('Chaves do dicionario: ', meu_dicionario.keys())
+            chave = input('Digite a chave do item que deseja remover: ')
+            valor_removido = meu_dicionario.pop(chave, 'chave não encontrada')
+            print(f'Item removido: {chave}: {valor_removido}')
         else:
-            print('O dicionario esta vazio. Adicione itens primeiro')
+            print('O dicionario esta vazio. Adicione iten primeiro')
 
     elif opcao == '3':
-        # Mostra os valores do dicionario usando values()
+        # Removi o último item usando popitem()
         if meu_dicionario:
-            print('Valores do dicionario', meu_dicionario.values())
+            chave, valor = meu_dicionario.popitem()
+            print(f'Ultimo item removido: {chave}: {valor}')
         else:
             print('O dicionario esta vazio. Adicione itens primeiro')
 
     elif opcao == '4':
-        # Mostrar os itens (chave-valor) do dicionario usando items()
+        # Mostra o dicionario atual
         if meu_dicionario:
-            print('Itens do dicionario', meu_dicionario.items())
+            print('Dicionario atual', meu_dicionario)
         else:
-            print('O dicionario esta vazio. Adicione itens primeiro')
+            print('O dicionario esta vazio')
 
     elif opcao == '5':
-        # Sai do programa
         print('Saindo do programa')
         break
 
     else:
-        # mensagem para opção inválida
         print('Opção inválida. Tente novamente')
